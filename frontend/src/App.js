@@ -2,6 +2,7 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Search from './components/Search';
+import ImageCard from './components/ImageCard';
 
 const UNSPLASH = process.env.REACT_APP_UNSPLASH_KEY;
 
@@ -16,7 +17,7 @@ function App() {
     fetch(`https://api.unsplash.com/photos/random/?query=${word}&client_id=${UNSPLASH}`)
     .then((res) => res.json())
     .then((data) => {
-      setImages([data, ...images])
+      setImages([{...data, title: word }, ...images])
     })
     .catch((err) => {
       console.log(err)
@@ -29,6 +30,7 @@ function App() {
     <div className="App">
       <Header />
       <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit}/>
+      {!!images.length && <ImageCard image={images[0]} />}
     </div>
   );
 }
