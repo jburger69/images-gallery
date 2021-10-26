@@ -1,5 +1,8 @@
 import os
 from pymongo import MongoClient, mongo_client
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path="./.env.local")
 
 MONGO_URL = os.environ.get("MONGO_URL", "mongo")
 MONGO_USERNAME = os.environ.get("MONGO_USERNAME", "root")
@@ -12,4 +15,10 @@ mongo_client = MongoClient(
     password=MONGO_PASSWORD,
     port=MONGO_PORT
 )
+
+def insert_test_document():
+    db = mongo_client.test
+    test_collection = db.test_collection
+    res = test_collection.insert_one({"name": "Josh", "student": True})
+    print(res)
 
