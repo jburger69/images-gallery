@@ -7,7 +7,7 @@ const ImageCard = ({ image, deleteImage, saveImage }) => {
 
 
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card bg="dark" text="white" style={{ width: "18rem" }}>
       <Card.Img
        variant="top"
        src={image.urls.small} 
