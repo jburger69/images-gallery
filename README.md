@@ -4,6 +4,7 @@ Full stack application based on React and Python Flask. I built this app using t
 I built the app to allow users to search random images from the unsplash API and have the ability to save the images to there own gallery.
 
 # Pictures
+<img width="1428" alt="Screen Shot 2021-12-01 at 9 58 04 PM" src="https://user-images.githubusercontent.com/71084231/144351099-81a37166-ec97-43ce-80cd-4ee10845fbe7.png">
 
 
 # Installation
