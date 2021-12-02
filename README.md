@@ -6,6 +6,8 @@ I built the app to allow users to search random images from the unsplash API and
 # Pictures
 <img width="1428" alt="Screen Shot 2021-12-01 at 9 58 04 PM" src="https://user-images.githubusercontent.com/71084231/144351099-81a37166-ec97-43ce-80cd-4ee10845fbe7.png">
 
+<img width="1401" alt="Screen Shot 2021-12-01 at 10 03 53 PM" src="https://user-images.githubusercontent.com/71084231/144351185-1ce74831-9505-4dc3-bbf1-be9c706f1352.png">
+
 
 # Installation
 To use this app, clone the [repo](https://github.com/jburger69/images-gallery), then execute:
